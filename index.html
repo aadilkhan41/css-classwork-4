@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      width: 100vw;
+      height: 100vh;
+      background-color: lightgray;
+    }
+
+    main{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::after{
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      position: absolute;
+      transform: skewY(10deg);
+      box-shadow: 0 0 10px black;
+      background: linear-gradient(to right, #b92b27, #1565c0);
+    }
+
+    div{
+      width: 85%;
+      height: 75%;
+      margin: auto;
+      padding: 2%;
+      display: flex;
+      color: white;
+      margin-top: 7.5%;
+      box-shadow: 0 0 10px black;
+      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    }
+
+    section{
+      max-width: 40%;
+    }
+
+    h1{
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    p{
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    img{
+      width: 600px;
+      height: 300px;
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+
+    img:hover{
+      top: 15px;
+      right: 0;
+      width: 900px;
+      height: 600px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <section>
+        <h1>Shoe-1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at, blanditiis saepe adipisci molestiae neque quisquam perferendis, repudiandae repellendus odio a repellat minus iste sapiente molestias nulla nam, quas perspiciatis!</p>
+        <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore.</p>
+      </section>
+      <img src="https://priyanshu-240499.github.io/Assignments-CSS/position/assets/shoe-1.png" alt="shoe1">
+    </div>
+  </main>
+</body>
+</html>
